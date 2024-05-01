@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    background-color: #12b0b9;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 50%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0
+}
+
+nav h1{
+    font-size: 45px;
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0
+}
