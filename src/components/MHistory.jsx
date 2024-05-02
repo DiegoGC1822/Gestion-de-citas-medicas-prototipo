@@ -1,24 +1,29 @@
-import MInformation from "./MInformation"
-import '../styles/MHistory.css'
-const MHistory = ({citasMedicas}) => (
+import styles from '../styles/Card.module.css'
+const MHistory = () => (
     <>
-        <section className="MHistory">
-            <h1>Mis Citas</h1>
-            <div className="containertable">
-                <table style={{width: '100%',height: 'auto'}}>
-                    <thead>
-                        <tr style={{backgroundColor: '#12b0b9'}}>
-                            <th>Fecha</th>
-                            <th>Hora</th>
-                            <th>Doctor</th>
-                            <th>Especialidad</th>
-                            <th>Detalle</th>
-                        </tr>
-                    </thead>
-                        {citasMedicas.map((citaMedica) => (
-                            <MInformation citaMedica={citaMedica} key={citaMedica.id} />
-                        ))}    
-                </table>
+        <section className='PInformation'>
+            <div className={styles.tarjeta}>
+                <h1>HISTORIAL MEDICO</h1>
+                <hr/>
+                <h2>Datos personales</h2>
+                <ul>
+                    <li>Nombre: Juan</li>
+                    <li>Apellido: Perez</li>
+                    <li>Edad: 25</li>
+                    <li>Sexo: Masculino</li>
+                    <li>Correo: juan_p123@gmail.com</li>
+                    <li>Telefono: 123456789</li>
+                    <li>Fecha de nacimiento: 12/12/2022</li>
+                    <li>Dirección: calle falsa 123</li>
+                </ul>
+                <h2>Antecedentes Médicos</h2>
+                <ul>
+                    <li>Alergias: Penicilina</li>
+                    <li>Condiciones Crónicas: Hipertensión arterial</li>
+                    <li>Cirugías Anteriores: Apendicectomía</li>
+                    <li>Traumatismos importantes: Ninguno conocido</li>
+                    <li>Historial de enfermedades familiares: Padre con diabetes tipo 2, madre con hipertensión arterial</li>
+                </ul>
             </div>
         </section>
     </>

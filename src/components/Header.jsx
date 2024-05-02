@@ -1,4 +1,4 @@
-import '../styles/Header.css'
+import '../styles/Header.module.css'
 const Header = () => (
     <header>
         <nav>
