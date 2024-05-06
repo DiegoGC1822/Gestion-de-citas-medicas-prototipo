@@ -1,9 +1,9 @@
 import Appointment from "./Appointment"
 import styles from '../styles/MyAppointments.module.css'
-const MyAppointments = ({citasMedicas,fechaFormateada,horaFormateada}) => (
+const MyAppointments = ({citasMedicas,setVisibleInicio,setCita,setCitasMedicas}) => (
     <>
-        <section className="MHistory">
-            <h1 style={{marginTop:'0'}}>Mis Citas</h1>
+        <section>
+            <h1 style={{marginTop:'0'}}>MIS CITAS</h1>
             <div className={styles.containertable}>
                 <table className= {styles.table}>
                     <thead>
@@ -17,8 +17,8 @@ const MyAppointments = ({citasMedicas,fechaFormateada,horaFormateada}) => (
                     </thead>
                     <tbody>
                         {citasMedicas.slice().reverse().map((citaMedica) => (
-                            <Appointment citaMedica={citaMedica} fechaFormateada={fechaFormateada(citaMedica)} 
-                            horaFormateada={horaFormateada(citaMedica)} key={citaMedica.id} />
+                            <Appointment citaMedica={citaMedica} setVisibleInicio={setVisibleInicio} 
+                            setCita={setCita} setCitasMedicas={setCitasMedicas} citasMedicas={citasMedicas} key={citaMedica.id} />
                         ))}
                     </tbody>    
                 </table>

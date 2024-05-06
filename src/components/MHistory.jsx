@@ -1,7 +1,7 @@
 import styles from '../styles/Card.module.css'
 const MHistory = () => (
     <>
-        <section className='PInformation'>
+        <section>
             <div className={styles.tarjeta}>
                 <h1>HISTORIAL MEDICO</h1>
                 <hr/>
@@ -13,8 +13,8 @@ const MHistory = () => (
                     <li>Sexo: Masculino</li>
                     <li>Correo: juan_p123@gmail.com</li>
                     <li>Telefono: 123456789</li>
-                    <li>Fecha de nacimiento: 12/12/2022</li>
-                    <li>Dirección: calle falsa 123</li>
+                    <li>Fecha de nacimiento: 12/12/1999</li>
+                    <li>Dirección: calle Chorrillos 123</li>
                 </ul>
                 <h2>Antecedentes Médicos</h2>
                 <ul>

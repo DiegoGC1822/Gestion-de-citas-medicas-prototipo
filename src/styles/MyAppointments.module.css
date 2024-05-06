@@ -1,5 +1,5 @@
 .containertable {
-    max-height: 250px;
+    max-height: 500px;
     overflow-y: auto;
 }
 
@@ -23,4 +23,12 @@ table button{
     border-radius: 5px;
     width: 100%;
     font-size: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .containertable {
+        max-height: none;
+        overflow-x: auto;
+    }
 }

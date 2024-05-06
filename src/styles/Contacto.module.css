@@ -1,0 +1,73 @@
+.container{
+    margin: 20px auto;
+    width: 60%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.asunto{
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.mensaje{
+    margin: 20px 0;
+    border-radius: 20px;
+    padding: 10px 10px 200px 10px;
+    font-size: 20px;
+}
+
+.contacto button{
+    background-color: #12b0b9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons span i{
+    font-size: 50px;
+    text-align: center;
+}
+
+.icons span p{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .icons{
+        width: 100%;
+    }
+
+    .icons span i{
+        font-size: 30px;
+    }
+    
+    .icons span p{
+        font-size: 10px;
+    }
+}

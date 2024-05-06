@@ -1,0 +1,13 @@
+.menuBtn{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .menuBtn{
+        display: block;
+    }
+}

@@ -1,4 +1,4 @@
-header{
+.header{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -6,33 +6,60 @@ header{
     background-color: #12b0b9;
 }
 
-nav{
+.header nav{
     width: 80%;
     display: flex;
     justify-content: space-between;
 }
 
-nav ul{
+.header nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     padding: 0;
-    width: 50%;
+    width: 50%; 
+    transition: translateX(0);
 }
 
-nav ul li a{
+.header nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     margin: 0
 }
 
-nav h1{
+.header nav h1{
     font-size: 45px;
     height: 100%;
     display: flex;
     color: white;
     align-items: center;
     margin: 0
+}
+
+@media (max-width: 880px) {
+    .header nav ul{
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .header nav ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #12b0b9;
+        height: 100%;
+        margin: 0;
+        padding: 30px;
+        opacity: .9;
+        transition: transform 0.3s ease
+    }
+
+    .header nav ul li{
+        padding: 20px;
+    }
 }

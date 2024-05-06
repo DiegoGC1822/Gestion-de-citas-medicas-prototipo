@@ -2,12 +2,16 @@
     margin: 35px;
     display: grid;
     width: 80%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
     gap: 20px;
 }
 
-.Citas{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
+@media (max-width: 600px) {
+    .Inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}   
